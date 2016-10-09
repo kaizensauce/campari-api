@@ -32,7 +32,8 @@ app.use(_bodyParser2.default.urlencoded({
 }));
 
 var pomodoroRoute = (0, _pomodoro_routes2.default)(app);
+var port = (process.env.PORT || 3000);
 
-var server = app.listen(30003, function () {
+var server = app.listen(port, function () {
     console.log('Server running at localhost:30003');
 });
