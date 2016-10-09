@@ -22,7 +22,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var app = (0, _express2.default)();
 
 //mongoose.connect('mongodb://localhost/pomodoros');
-_mongoose2.default.connect('mongodb://mongodb:27017/pomodoros');
+mongodb://heroku_00msbsnf:2tle7klvn5952bngv7mg5178rl@ds033966.mlab.com:33966/heroku_00msbsnf/pomodoros
+//_mongoose2.default.connect('mongodb://mongodb:27017/pomodoros');
+_mongoose2.default.connect('mongodb://heroku_00msbsnf:2tle7klvn5952bngv7mg5178rl@ds033966.mlab.com:33966/heroku_00msbsnf/pomodoros');
 
 app.use(_bodyParser2.default.json());
 app.use(_bodyParser2.default.urlencoded({
