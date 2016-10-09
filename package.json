@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha test -u bdd -R spec",
-    "start": "nodemon index.js --exec babel-node --presets es2015,stage-2",
+    "start": "node index.js",
+    "start-debug": "nodemon index.js --exec babel-node --presets es2015,stage-2",
     "clean-dist": "npm run remove-dist && mkdir dist",
     "remove-dist": "rimraf dist",
     "compile": "npm run clean-dist && babel *.js --presets es2015 -d dist",
